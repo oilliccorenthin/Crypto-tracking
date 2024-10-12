@@ -1,0 +1,22 @@
+.back-to-top-btn {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    margin:1.5rem;
+    cursor: pointer;
+}
+
+.back-to-top-btn.visible {
+    opacity: 1;
+    pointer-events: auto; /* Enable clicks when visible */
+}

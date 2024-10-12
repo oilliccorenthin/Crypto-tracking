@@ -1,0 +1,100 @@
+.list-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 2px solid var(--black);
+}
+
+.list-row:hover {
+    background-color: var(--darkgrey);
+    border-color: var(--green);
+    scale: 1.05;
+    transition: all 0.4s;
+}
+
+.no-hover .list-row  {
+    border-color: var(--darkgrey);
+}
+.no-hover .list-row:hover {   
+    scale: 1;
+    transition: none; 
+}
+
+.no-hover .list-container-red:hover{
+    border-color: var(--darkgrey);
+}
+
+.list-container-red:hover {
+    border-color: var(--red);
+}
+
+.list-row td {
+    text-align: left;
+    width: 18%;
+}
+
+.td-image {
+    width: 5rem;
+    margin-right: 1.5rem;
+}
+
+.td-center-align {
+    text-align: center;
+}
+
+
+.desktop-td-mkt {
+    display: block;
+}
+
+.mobile-td-mkt {
+    display: none;
+}
+
+@media only screen and (max-width: 1050px) {
+    .td-icon{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .td-total-volume, .desktop-td-mkt{
+        display: none;
+    }
+
+    .mobile-td-mkt{
+        display: block;
+    }
+
+    .td-right-align {
+        text-align: center;
+    }
+    .coin-price {
+        text-align: center;
+        padding-left: 2rem;
+    }
+
+    .name-col, .chip-flex, .coin-price, .td-image{
+        width: 0.5rem;
+        scale: 0.8;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .chip-flex, .mobile-td-mkt  {
+        display: none;
+    }
+
+    .list-row {
+    margin: 0.1rem;
+    padding: 0.1rem;
+    padding-left: 1.5rem;
+    }
+
+    
+
+}
