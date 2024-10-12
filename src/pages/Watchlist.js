@@ -4,6 +4,7 @@ import Header from "../components/Common/Header";
 import TabsComponent from "../components/Dashboard/Tabs";
 import { get100Coins } from "../functions/get100Coins";
 import Footer from "../components/Common/Footer";
+import BackToTop from "../components/Common/BackToTop";
 
 function Watchlist() {
   const watchlist = JSON.parse(localStorage.getItem("watchlist"));
@@ -25,6 +26,7 @@ function Watchlist() {
   return (
     <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <Header />
+      <BackToTop />
         <div style={{ flexGrow: 1 }}>
         {watchlist?.length > 0 ? (
           <TabsComponent coins={coins} />

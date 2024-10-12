@@ -1,5 +1,8 @@
 import { convertDate } from "./convertDate";
 
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 const getColor = () => {
     return getComputedStyle(document.documentElement).getPropertyValue('--orange').trim();
@@ -11,7 +14,7 @@ export const settingChartData  = (setChartData, prices1, prices2, cryptoName1, c
             labels: prices1.map((price) => convertDate(price[0])),
             datasets: [
                 {
-                    label: cryptoName1,
+                    label: capitalizeFirstLetter(cryptoName1),
                     data: prices1.map((price) => price[1]),
                     borderColor: getColor(),
                     borderWidth: 2,
@@ -21,7 +24,7 @@ export const settingChartData  = (setChartData, prices1, prices2, cryptoName1, c
                     yAxisID:'crypto1'
                 },
                 {
-                    label: cryptoName2,
+                    label: capitalizeFirstLetter(cryptoName2),
                     data: prices2.map((price) => price[1]),
                     borderColor: "#61c96f",
                     borderWidth: 2,
@@ -42,7 +45,7 @@ export const settingChartData  = (setChartData, prices1, prices2, cryptoName1, c
                     borderWidth: 2,
                     fill: true,
                     tension: 0.25,
-                    backgroundColor: "rgba(58, 128, 233,0.1)",
+                    backgroundColor: "rgba(255, 111, 32,0.1)",
                     pointRadius: 0,
                     yAxisID:'crypto1'
                 },

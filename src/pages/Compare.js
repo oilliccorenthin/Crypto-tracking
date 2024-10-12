@@ -13,6 +13,7 @@ import CoinInfo from "../components/Coin/CoinInfo";
 import LineChart from "../components/Coin/LineChart";
 import PriceType from "../components/Coin/PriceType/index.js";
 import Footer from "../components/Common/Footer/index.js";
+import BackToTop from "../components/Common/BackToTop/index.js";
 
 function ComparePage() {
     const currency = 'usd';
@@ -119,6 +120,7 @@ function ComparePage() {
     return (
         <div>
             <Header />
+            <BackToTop />
             {isLoading ? (
                 <Loader />
             ) : (
@@ -152,7 +154,7 @@ function ComparePage() {
                     <CoinInfo heading={crypto2Data.name} desc={crypto2Data.desc}/>
                 </>
             )}
-            <Footer  />
+            <Footer />
         </div>
     );
 }

@@ -17,12 +17,9 @@ function MainComponent() {
                     animate={{ opacity: 1, scaleY: 1 }} 
                     transition={{ duration: 1 }}
                 >
-                    <span>T</span>
-                    <span>r</span>
-                    <span>a</span>
-                    <span>c</span>
-                    <span>k</span>
-                    <span>&nbsp;</span> 
+                    <span>S</span>
+                    <span>p</span>
+                    <span>y</span>
                     <span>C</span>
                     <span>r</span>
                     <span>y</span>
