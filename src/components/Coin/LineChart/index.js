@@ -1,7 +1,9 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import { convertNumber } from '../../../functions/convertNumber';
-import { Chart as ChartJS } from "chart.js/auto"; //Don't get rid of this
+/* eslint-disable-next-line no-unused-vars */
+import { Chart as ChartJS } from "chart.js/auto"; // Don't get rid of this
+
 
 function LineChart({ chartData, priceType, multiAxis }) {
 
