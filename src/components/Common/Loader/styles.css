@@ -5,7 +5,7 @@
     width: 99vw;
     height: 99vh;
     background-color: var(--black);
-    color: var(--blue);
+    color: var(--orange);
     position: absolute;
     z-index: 1000;
 }

@@ -1,5 +1,10 @@
 import { convertDate } from "./convertDate";
 
+
+const getColor = () => {
+    return getComputedStyle(document.documentElement).getPropertyValue('--orange').trim();
+  };
+
 export const settingChartData  = (setChartData, prices1, prices2, cryptoName1, cryptoName2) => {
     if(prices2) {
         setChartData({
@@ -8,7 +13,7 @@ export const settingChartData  = (setChartData, prices1, prices2, cryptoName1, c
                 {
                     label: cryptoName1,
                     data: prices1.map((price) => price[1]),
-                    borderColor: "#3a80e9",
+                    borderColor: getColor(),
                     borderWidth: 2,
                     fill: false,
                     tension: 0.25,
@@ -33,7 +38,7 @@ export const settingChartData  = (setChartData, prices1, prices2, cryptoName1, c
             datasets: [
                 {
                     data: prices1.map((price) => price[1]),
-                    borderColor: "#3a80e9",
+                    borderColor: getColor(),
                     borderWidth: 2,
                     fill: true,
                     tension: 0.25,

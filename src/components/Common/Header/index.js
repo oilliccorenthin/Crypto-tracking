@@ -9,7 +9,7 @@ function Header() {
         
         <Link to='/'>
             <h1 className='logo'>
-                CryptoTracker <span style={{ color: "var(--blue)" }}>.</span>
+                CryptoTracker <span style={{ color: "var(--orange)" }}>.</span>
             </h1>
         </Link>
         <div className='links'>

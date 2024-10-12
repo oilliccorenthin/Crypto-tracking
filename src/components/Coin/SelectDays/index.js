@@ -21,7 +21,7 @@ export default function SelectDays({days, handleDaysChange, Tag}) {
                 },
                 "&:hover": {
                     "&& fieldset": {
-                        borderColor: "var(--blue)",
+                        borderColor: "var(--orange)",
                     },
                 },
             }}

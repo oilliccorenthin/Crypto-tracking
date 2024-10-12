@@ -24,10 +24,14 @@ function TabsComponent({ coins }) {
     textTransform: 'capitallize',
   }
 
+  const getColor = () => {
+    return getComputedStyle(document.documentElement).getPropertyValue('--orange').trim();
+  };
+
   const theme = createTheme({
     palette: {
         primary: {
-            main: '#3a80e9',
+            main: getColor(),
         }
     }
   });

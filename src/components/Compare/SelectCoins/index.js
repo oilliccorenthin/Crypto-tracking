@@ -18,7 +18,7 @@ export default function SelectCoins({ crypto1, crypto2, handleCoinChange }) {
         },
         "&:hover": {
             "&& fieldset": {
-                borderColor: "var(--blue)",
+                borderColor: "var(--orange)",
             },
         },
     };

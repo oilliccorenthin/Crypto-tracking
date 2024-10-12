@@ -13,9 +13,9 @@ export default function PaginationControlled({ page, handlePageChange }) {
         sx={{
             color: "var(--white)",
             "& .Mui-selected": {
-                backgroundColor: "var(--blue) !important",
+                backgroundColor: "var(--orange) !important",
                 color: "#fff !important",
-                borderColor: "var(--blue) !important",
+                borderColor: "var(--orange) !important",
             },
             "& .MuiPaginationItem-ellipsis":{
                 border: "0px solid var(--grey) !important",

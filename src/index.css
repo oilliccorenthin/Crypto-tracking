@@ -4,6 +4,7 @@
   --white: #fff;
   --black: #111;
   --blue:  #3a80e9;
+  --orange: #ff6f20;
   --grey :#888;
   --darkgrey:#1b1b1b;
   --green:#61c96f;
@@ -24,7 +25,7 @@ body {
 }
 
 ::selection{
-  background-color: var(--blue);
+  background-color: var(--orange);
   color: var(--white);
 }
 
@@ -37,7 +38,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--blue);
+  background: var(--orange);
   border-radius: 3rem;
 }
 

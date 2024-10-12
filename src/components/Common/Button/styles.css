@@ -1,7 +1,7 @@
 .btn{
-    background-color: var(--blue);
+    background-color: var(--orange);
     color: var(--white);
-    border: 2px  solid var(--blue);
+    border: 2px  solid var(--orange);
     padding: 0.5rem 1.5rem;
     border-radius: 3rem;
     font-weight: 600;
@@ -20,7 +20,7 @@
 .outlined-btn{
     background-color: var(--black);
     color: var(--white);
-    border: 2px  solid var(--blue);
+    border: 2px  solid var(--orange);
     padding: 0.5rem 1.5rem;
     border-radius: 3rem;
     font-weight: 600;
@@ -31,6 +31,6 @@
 }
 
 .outlined-btn:hover {
-    background-color: var(--blue);
+    background-color: var(--orange);
     transition: all 0.3s;
 }

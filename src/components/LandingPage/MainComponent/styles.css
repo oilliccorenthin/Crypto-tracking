@@ -26,7 +26,7 @@
 }
 
 .track-crypto-heading span:hover {
-    color: var(--blue); /* Remplace par la couleur de ton choix */
+    color: var(--orange); /* Remplace par la couleur de ton choix */
 }
 /*
 .track-crypto-heading:hover {
@@ -38,7 +38,7 @@
 */
 
 .real-time-heading {
-    color: var(--blue);
+    color: var(--orange);
 }
 
 .info-text {
