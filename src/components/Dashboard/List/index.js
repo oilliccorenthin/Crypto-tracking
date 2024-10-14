@@ -22,7 +22,7 @@ function List({ coin, delay }) {
 
   useEffect(() => {
     // Suppression des colonnes non nécessaires sur écran petit
-    if (window.innerWidth < 750) {
+    if (window.innerWidth < 850) {
       document.querySelectorAll(".td-total-volume").forEach(cell => cell.remove());
     }
   }, []);

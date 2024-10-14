@@ -61,7 +61,7 @@
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 900px) {
     .td-total-volume, .desktop-td-mkt{
         display: none;
     }
@@ -73,19 +73,19 @@
     .td-right-align {
         text-align: center;
     }
-    .coin-price {
+    .list-table .coin-price {
         text-align: center;
         padding-left: 2rem;
     }
 
-    .name-col, .chip-flex, .coin-price, .td-image{
+    .list-table .name-col, .list-table .chip-flex, .list-table .coin-price, .list-table .td-image{
         width: 0.5rem;
         scale: 0.8;
     }
 }
 
-@media only screen and (max-width: 550px) {
-    .chip-flex, .mobile-td-mkt  {
+@media only screen and (max-width: 750px) {
+    .list-table .chip-flex, .list-table  .mobile-td-mkt  {
         display: none;
     }
 
@@ -94,7 +94,19 @@
     padding: 0.1rem;
     padding-left: 1.5rem;
     }
+}
 
-    
+@media screen and (max-width: 500px) {
+    .list-table .watchlist-icon  {
+        display: none;
+    }
+    .list-table .name-col {
+        margin: -1.5rem;
+    }
+
+    .list-table  .coin-price {
+        margin-left: -3.5rem;
+        margin-top: 0.5rem;
+    }
 
 }
