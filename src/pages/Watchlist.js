@@ -5,6 +5,7 @@ import TabsComponent from "../components/Dashboard/Tabs";
 import { get100Coins } from "../functions/get100Coins";
 import Footer from "../components/Common/Footer";
 import BackToTop from "../components/Common/BackToTop";
+import { Link } from "react-router-dom";
 
 function Watchlist() {
   const watchlist = JSON.parse(localStorage.getItem("watchlist"));
@@ -43,7 +44,13 @@ function Watchlist() {
               }}
             >
               <a href="/dashboard">
-                <Button text="Dashboard" />
+              <Link to={`/dashboard`}>
+                        <Button 
+                            text={"Tableau de bord"}
+                            outlined={false}
+                            onClick={()=>console.log('Dashboard redirecting')}  
+                        />
+              </Link>
               </a>
             </div>
           </div>
