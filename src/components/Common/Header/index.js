@@ -3,6 +3,7 @@ import "./styles.css";
 import AnchorTemporaryDrawer from './drawer.js';
 import Button from '../Button/index.js';
 import { Link } from 'react-router-dom';
+import ThemeToggle from '../ThemeToggle/index.js';
 
 function Header() {
     return <div className='navbar'>
@@ -13,6 +14,7 @@ function Header() {
             </h1>
         </Link>
         <div className='links'>
+            <ThemeToggle />
             <Link to='/'>
                 <p className='link'>Accueil</p>
             </Link>

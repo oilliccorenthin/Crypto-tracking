@@ -8,7 +8,10 @@
     top: 0;
     left: 0;
     z-index: 1;
+    transition: background-color var(--transition-duration), color var(--transition-duration), border-color var(--transition-duration);
 }
+
+
 
 .logo {
     font-size: 1.2rem;
@@ -56,6 +59,7 @@
     .drawer-div {
         width: 40vw;
         background-color: var(--black);
+        transition: background-color var(--transition-duration), color var(--transition-duration), border-color var(--transition-duration);
         height: 100vh;
         padding:1.5rem
     }

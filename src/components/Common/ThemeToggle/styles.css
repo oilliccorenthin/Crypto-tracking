@@ -1,0 +1,30 @@
+.theme-toggle {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: var(--grey);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .theme-toggle-ball {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--white);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .theme-toggle.dark .theme-toggle-ball {
+    transform: translateX(20px);
+  }
+  
+  .theme-toggle.dark {
+    background-color: var(--orange);
+  }
+  
