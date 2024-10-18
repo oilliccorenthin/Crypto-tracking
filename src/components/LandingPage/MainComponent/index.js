@@ -52,7 +52,7 @@ function MainComponent() {
                 >
                     <Link to={`/dashboard`}>
                         <Button 
-                            text={"Tableau de bord"}
+                            text={"Tableau De Bord"}
                             outlined={false}
                             onClick={()=>console.log('Dashboard redirecting')}  
                         />
