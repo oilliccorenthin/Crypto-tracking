@@ -126,8 +126,12 @@ function ComparePage() {
             ) : (
                 <>
                     <div className='grey-wrapper no-hover'>
-                        <List coin={crypto1Data} />
-                        <List coin={crypto2Data} />
+                        <div className="list-table">
+                            <List coin={crypto1Data} />
+                        </div>
+                        <div className="list-table">
+                            <List coin={crypto2Data} />
+                        </div>
                     </div>
                     <div className='grey-wrapper no-hover'>
                         <div className="coins-days-flex">

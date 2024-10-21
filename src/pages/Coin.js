@@ -88,9 +88,12 @@ function CoinPage() {
                 <Loader />
             ) : (
                 <>
-                    <div className='grey-wrapper no-hover'>
-                        <List coin={coinData} />
+                    <div className="grey-wrapper no-hover">
+                        <div className='list-table'>
+                            <List coin={coinData} />
+                        </div>
                     </div>
+                    
                     <div className="grey-wrapper">
                         <SelectDays days={days} handleDaysChange={handleDaysChange} />
                         <PriceType priceType={priceType} handlePriceTagChange={handlePriceTagChange} />

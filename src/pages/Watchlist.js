@@ -32,7 +32,7 @@ function Watchlist() {
         {watchlist?.length > 0 ? (
           <TabsComponent coins={coins} />
         ) : (
-          <div style={ {padding: "9rem"} }>
+          <div style={ {padding: "6rem"} }>
             <h1 style={{ textAlign: "center"}}>
               Oups ! Vous n'avez aucune crypto dans votre watchlist !
             </h1>

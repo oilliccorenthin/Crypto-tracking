@@ -20,7 +20,7 @@
   --black: #f5f5f5;
   --grey: #7a7a7a;
   --darkgrey: #dcdcdc;
-  --green:#53b660;
+  --green:#48a054;
   --red:#eb3a3a;
   --orange: #ff6f20;
 }
@@ -119,19 +119,7 @@ img {
   max-width: 350px;
 }
 
-h1 {
-  font-size: 6rem;
-  margin: 0;
-}
 
-h2 {
-  font-size: 2rem;
-  margin: 0.5rem 0;
-}
-
-p {
-  font-size: 1.2rem;
-}
 
 .home-link {
   margin-top: 1rem;
